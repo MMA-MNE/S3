@@ -308,7 +308,7 @@ else:
                             title='Gender Contribution',
                     color= 'sex',color_discrete_map= colors)
     
-    st.plotly_chart(fig_sex, use_container_width= True)
+    st.plotly_chart(fig_sex_all, use_container_width= True)
 
     #Age group dfs
     df_age_group= df.groupby(['age_group'], as_index= False).agg({'year':'count'})
