@@ -300,7 +300,7 @@ else:
     st.plotly_chart(fig_sex, use_container_width= True)
 
     #Sex Based Data Frame
-    df_sex_all= df_si.groupby(['sex'], as_index= False).agg({'year':'count'})
+    df_sex_all= df.groupby(['sex'], as_index= False).agg({'year':'count'})
 
     #Sex Based Pie Plot
     colors= {'Male':'blue','Female':'orange'}
