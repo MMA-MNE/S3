@@ -327,7 +327,7 @@ else:
     #Age group charts
     colors= {'adult':'blue','child':'orange'}
     fig_child = px.pie(df_child, names= 'child',values='year',labels={'year':'Patients','child':'Child or Adult'},
-                        title='Childhood TB',
+                        title='Childhood TB (<15 yrs)',
                   color= 'child',color_discrete_map= colors)
     fig_child.update_traces(pull=[0, 0.2])
     st.plotly_chart(fig_child, use_container_width= True)
