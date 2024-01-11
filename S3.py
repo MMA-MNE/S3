@@ -156,19 +156,13 @@ def load_data():
     df['SR'].replace('NaypyiTaw','Naypyitaw', inplace = True)
     df['age_group'] = df['age'].apply(categorize_age_group)
     df['age_group_detail'] = df['age'].apply(categorize_age_group_detail)
-
-    return df
-
-def load_data_o8():
-    df_o8= df
-    df_o8['Reported_yr'] = df_o8['year'] + 1
-
-    return df_o8
-
     
+    #O8 Dataframe
+    df_o8 = df.copy()
+    df_o8['Reported_yr'] = df_o8['year'] + 1
+    return df, df_o8
 
-df = load_data()
-df_o8 = load_data_o8()
+df, df_o8 = load_data()
 
    
 
