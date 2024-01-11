@@ -279,7 +279,7 @@ else:
     df_tsp.rename(columns={'year':'Total Cases'},inplace=True)
     
     st.subheader('Township with Highest Case Holdings')
-    st.dataframe(df_tsp, hide_index=True)
+    st.dataframe(df_tsp, hide_index=True, use_container_width= True)
    
 
     #Tsps Bar Plot
