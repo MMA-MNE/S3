@@ -7,7 +7,7 @@ import seaborn as sns
 from matplotlib.ticker import MaxNLocator
 import plotly.graph_objects as go
 
-st.set_page_config(page_title="Scheme III", page_icon="chart_with_upwards_trend", layout="wide")
+st.set_page_config(page_title="Scheme III", page_icon="roller_coaster", layout="wide")
 
 #Def for Age Group Columns
 def categorize_age_group(age):
@@ -224,7 +224,7 @@ df_o8 = df_o8.query(
 )
 
 # ---- MAINPAGE ----
-st.title(":chart_with_upwards_trend: Scheme 3")
+st.title(":roller_coaster: Scheme 3")
 st.markdown("##")
 
 # Display DataFrame or a message if empty
